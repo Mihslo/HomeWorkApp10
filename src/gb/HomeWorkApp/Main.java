@@ -12,6 +12,7 @@ public class Main {
     }
 
     public static boolean summ(int a, int b) {
+
         return a + b >= 10 && a + b <= 20;
     }
 
@@ -39,7 +40,7 @@ public class Main {
 
     public static boolean year(int y) {
 
-            if (y % 4 == 0 ) {
+            if (y % 4 == 0 && y%100!=100 && y%400==0 ) {
                 return true;
             }
         return false;
